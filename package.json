@@ -80,10 +80,8 @@
     "printWidth": 80
   },
   "dependencies": {
-    "create-react-context": "0.3.0",
     "invariant": "^2.2.3",
-    "prop-types": "^15.6.1",
-    "react-lifecycles-compat": "^3.0.4"
+    "prop-types": "^15.6.1"
   },
   "bugs": {
     "url": "https://github.com/reach/router/issues"

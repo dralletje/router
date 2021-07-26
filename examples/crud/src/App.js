@@ -11,13 +11,12 @@ import {
   updateContact,
   deleteContact
 } from "./utils";
-import createContext from "create-react-context";
 
 globalHistory.listen(({ location, action }) => {
   console.log({ location, action });
 });
 
-const InvalidateContacts = createContext();
+const InvalidateContacts = React.createContext();
 const withInvalidateContacts = Comp => props => (
   <InvalidateContacts.Consumer>
     {invalidate => <Comp {...props} invalidateContacts={invalidate} />}
